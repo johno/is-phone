@@ -13,4 +13,10 @@ describe('is-phone', function() {
   it('should throw an error when a string is not passed', function() {
     assert.throws(isPhone, TypeError, "is-phoneexpects a string");
   });
+
+  it('should accept many phone number formats', function() {
+    ['123 456 7890', '(123) 456 7890', '123-456-7890', '1234567890'].forEach(function(phone) {
+      assert.ok(isPhone(phone));
+    })
+  });
 });
