@@ -1,0 +1,34 @@
+{
+  "name": "is-phone",
+  "version": "0.0.1",
+  "description": "Check whether a string is a valid phone number.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnotander/is-phone.git"
+  },
+  "keywords": [
+    "phone",
+    "regex",
+    "phone-number",
+    "is-phone-number"
+  ],
+  "author": "John Otander <johnotander@gmail.com> (http://johnotander.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnotander/is-phone/issues"
+  },
+  "homepage": "https://github.com/johnotander/is-phone",
+  "devDependencies": {
+    "mocha": "^2.0.1"
+  },
+  "dependencies": {
+    "phone-regex": "0.0.1"
+  }
+}
