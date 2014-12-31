@@ -5,5 +5,5 @@ module.exports = function(phone) {
     throw new TypeError('is-phone expects a string');
   }
 
-  return phoneRegex().test(phone);
+  return phoneRegex({ exact: true }).test(phone);
 };
