@@ -11,6 +11,11 @@ describe('is-phone', function() {
     assert.ok(!isPhone('1234567'));
   });
 
+  it('should return false without a phone number', function() {
+    assert.ok(!isPhone('\n1234567890'));
+  });
+
+
   it('should throw an error when a string is not passed', function() {
     assert.throws(isPhone, TypeError, "is-phoneexpects a string");
   });
